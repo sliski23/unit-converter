@@ -1,7 +1,11 @@
+import { useState } from 'react';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 
-const Selection = () => {
+const Units = () => {
+
+    const [value, setValue] = useState(0);
+
     return (
           <Tabs>
             <TabList>
@@ -15,10 +19,10 @@ const Selection = () => {
                 <Tab>Fahreiheit &rarr; Celsius (Dominik)</Tab>
             </TabList>
 
-            <input />
+            <input type="number" value={value} step="0.1" onChange={(e) => setValue(e.target.value)}/>
 
             <TabPanel>
-            <h2>Any content 1</h2>
+            <h2>Any content 1 {value}</h2>
                 {/* <OliComponent value={value} /> */}
             </TabPanel>
             <TabPanel>
@@ -53,4 +57,4 @@ const Selection = () => {
     )
 } 
 
-export default Selection
+export default Units

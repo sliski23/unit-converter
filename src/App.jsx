@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import './App.css'
-import Selection from './components/Selection'
+import Units from './components/Units'
 
 function App() {
   const [current, setCurrent] = useState(null)
@@ -10,7 +10,7 @@ function App() {
     <>
       <h1>Unit converter</h1>
 
-      <Selection />
+      <Units />
 
     </>
   )
