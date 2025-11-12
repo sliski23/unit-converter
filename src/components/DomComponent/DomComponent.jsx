@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const converter = (value) => {
+const DomComponent = (value) => {
   const [fahrenheit, ustawFahrenheit] = useState('');
 
   return (
@@ -10,4 +10,4 @@ const converter = (value) => {
   );
 };
 
-export default converter;
+export default DomComponent;
