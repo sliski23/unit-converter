@@ -29,11 +29,11 @@ const Units = () => {
       />
 
       <TabPanel>
-        <h2>Any content 1 {value}</h2>
-        {/* <OliComponent value={value} /> */}
+        <h2>Oli component</h2>
+        <OliComponent value={value} />
       </TabPanel>
       <TabPanel>
-        <h2>Any content 2</h2>
+        <h2>Kry component</h2>
         <KryComponent value={value} />
       </TabPanel>
       <TabPanel>
