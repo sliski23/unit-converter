@@ -34,7 +34,7 @@ const Units = () => {
       </TabPanel>
       <TabPanel>
         <h2>Any content 2</h2>
-        {<KryComponent value={value} />}
+        <KryComponent value={value} />
       </TabPanel>
       <TabPanel>
         <h2>Any content 3</h2>
@@ -50,7 +50,7 @@ const Units = () => {
       </TabPanel>
       <TabPanel>
         <h2>Pascal-Bar converter</h2>
-        {<MakComponent value={value} />} pa
+        <MakComponent value={value} />
       </TabPanel>
       <TabPanel>
         <h2>Any content 7</h2>
